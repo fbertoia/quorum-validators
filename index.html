@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Dapp Quorum Dev</title>    
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Dapp Quorum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="ml-auto btn btn-primary" href="/">Home</a>
+    <a class="btn btn-primary" href="/settings">Settings</a>
+</nav>
+<div class="container">
+    <h5 id="blockNumberText" class="text-right">Current Block Number: </h5>
+</div>
+<div class="container">
+    <table class="table table-hover">
+        <h3>Validator nodes</h3>
+        <thead>
+            <tr>
+                <th>Eth Adress</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="validatorList">
+            
+        </tbody>
+    </table>
+    <table class="table table-hover">
+            <h3>Candidates List</h3>
+            <thead>
+                <tr>
+                    <th>Eth Adress</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="candidateList">
+                
+            </tbody>
+        </table>
+    
+    <h3>Vote for new validator</h3>
+        <div class="d-flex justify-content-between form-group has-success">
+            <input id="propose-input" type="text" placeholder="Ethereum address" class="w-50 d-inline-block form-control is-valid" id="inputValid">
+            <button id="propose-btn" class="d-inline-block btn btn-primary pr-3" value="Vote In">Vote In</button>
+        </div>   
+    
+    <h3 class="mt-50">Settings</h3>
+        <div class="d-flex form-group has-success">
+            <input id="address" class="w-50 d-inline form-control" placeholder="address" type="text">
+            <p> : </p>
+            <!-- <input id="port" class="w-50 d-inline form-control" placeholder="port" type="text"> -->
+            <select id="port" class="form-control">
+                <option>22000</option>
+                <option>22001</option>
+                <option>22002</option>
+                <option>22003</option>
+                <option>22004</option>
+                <option>22005</option>
+                <option>22006</option>
+            </select>
+        </div>
+</div>
+
+    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</body>
+</html>
